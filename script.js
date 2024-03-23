@@ -71,10 +71,46 @@ async function process(){
     sp_attack.innerText = pokeData.stats[3].base_stat;
     sp_defense.innerText = pokeData.stats[4].base_stat;
     speed.innerText = pokeData.stats[5].base_stat;
+
+
     image1.src = pokeData.sprites.front_default;
+    image1.onerror = function()
+    {
+      image1.style.visibility = "hidden";
+    }
+    image1.onload = function(){
+      image1.style.visibility = "visible";
+    }
+
+
     image2.src = pokeData.sprites.back_default;
+    image2.onerror = function()
+    {
+      image2.style.visibility = "hidden";
+    }
+    image2.onload = function(){
+      image2.style.visibility = "visible";
+    }
+
+
     image3.src = pokeData.sprites.front_shiny;
+    image3.onerror = function()
+    {
+      image3.style.visibility = "hidden";
+    }
+    image3.onload = function(){
+      image3.style.visibility = "visible";
+    }
+
     image4.src = pokeData.sprites.back_shiny;
+    image4.onerror = function()
+    {
+      image4.style.visibility = "hidden";
+    }
+    image4.onload = function(){
+      image4.style.visibility = "visible";
+    }
+    
     types.innerHTML = '';
 for(let i=0;i<pokeData.types.length;i++)
 {
