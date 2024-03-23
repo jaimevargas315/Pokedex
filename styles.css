@@ -1,0 +1,89 @@
+
+h1{
+text-align:center;
+color:white;
+font-size:50px;
+margin-top:50px;
+text-shadow: 5px 0px 5px gray;
+}
+body{
+  font-family: Arial, Sans-serif;
+  background-color: #000000;
+background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#00490d 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #00490d 8px, #000000 8px) -4px 0;
+background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+font-size:17px;
+}
+#container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px  red;
+  margin:auto;
+  width:500px;
+  padding:10px;
+  
+}
+label{
+  margin-left:120px;
+  text-align:center;
+  font-size:20px;
+}
+input {
+  margin-left:120px;
+  height:50px;
+  width:200px;
+  font-size:20px;
+}
+table{
+  background-color: #7f21ab;;
+  margin:auto;
+  text-align:center;
+  color:white;
+  font-size:20px;
+  border-collapse: collapse;
+}
+th, td{
+  border: 5px solid white;
+  padding:7px;
+}
+#base{
+  width:300px;
+}
+#stats{
+  width:150px;
+}
+button{
+  background-color:#7f21ab;
+  color:white;
+  border-radius:20px;
+  width:100px;
+  height:50px;
+  border:none;
+  cursor:pointer;
+}
+#screen{
+  background-color:#91defa;
+  width:480px;
+  height:425px;
+  border-radius:15px;
+  padding:10px;
+  color:transparent;
+}
+img{
+  width:150px;
+}
+#images{
+  margin-left:80px;
+}
+#type{
+   width:100px;
+   height:20px;
+   text-align: center;
+   padding: 10px;
+   border-radius:10px;
+   margin:auto;
+}
+#types{
+  display:flex;
+}
+
+
