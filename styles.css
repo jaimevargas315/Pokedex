@@ -59,6 +59,7 @@ button{
   height:50px;
   border:none;
   cursor:pointer;
+  font-style: bold;
 }
 #screen{
   background-color:#91defa;
