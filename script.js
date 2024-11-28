@@ -1,5 +1,7 @@
 const input = document.querySelector("#search-input");
-const button = document.querySelector("#search-button");
+const searchButton = document.querySelector("#search-button");
+const previousButton = document.querySelector("#previous-button");
+const nextButton = document.querySelector("#next-button");
 const pokeName = document.querySelector("#pokemon-name");
 const id = document.querySelector("#pokemon-id");
 const weight = document.querySelector("#weight");
@@ -42,7 +44,10 @@ const colors = {
 
 const api = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon"
 
-
+window.onload = () => {
+  input.value="1";
+  process();
+};
 const fetchPoke = async (fetchLink) => {
   try {
     const response = await fetch(fetchLink);
@@ -52,7 +57,22 @@ const fetchPoke = async (fetchLink) => {
     console.error(err);
   }
 };
-button.onclick = process;
+searchButton.onclick = process;
+previousButton.onclick = backward;
+nextButton.onclick = forward;
+
+async function backward() {
+  if(id.innerText > 1){
+     input.value = parseInt(id.innerText) - 1;
+     process();
+  }
+}
+async function forward() {
+  if(id.innerText < 1302){
+     input.value = parseInt(id.innerText) + 1;
+     process();
+  }
+}
 
 async function process(){
   let query = input.value;
